@@ -1,0 +1,9 @@
+server {
+    location / {
+        root /data/www;
+    }
+
+    location /api/ {
+        proxy_pass http://${API_URL}:${API_PORT}/;
+    }
+}
