@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM denoland/deno:alpine-1.12.2
+FROM denoland/deno:alpine-1.15.3
 COPY ./src ./app
 COPY ./.env ./app/
 COPY ./.env.defaults ./app/
